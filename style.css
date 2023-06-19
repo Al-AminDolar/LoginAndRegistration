@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppiens',sans-serif;
 }
 
 body{
@@ -89,7 +91,7 @@ content: "";
 
 
 .warpper{
-    position: relative;
+position: relative;
     width: 400px;
     height: 440px;
     border: 2px solid rgba(255,255,255,.5);
@@ -125,7 +127,6 @@ h2{
     transform: translateY(-50%);
     font-size: 1em;
     color: #fff;
-    font-weight: 500;
     pointer-events: none;
     transition: .5s;
 }
@@ -137,21 +138,23 @@ input:valid ~ label{
 
 
 .input-box input{
-   
     width: 100%;
     height: 100% ;
     background: transparent;
     border: none;
     outline: none;
-
+    color: #fff;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
 }
 
 .input-box .icon{
     position: absolute;
     font-size: 1.2em;
     right: 8px;
-    line-height:57px;
-   color:#fff;
-
+    color:#fff;
+    line-height: 48px;
 }
+
+
 

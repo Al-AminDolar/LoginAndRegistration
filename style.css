@@ -69,7 +69,7 @@ content: "";
     transform-origin: left;
 }
 
-.navigation .Login-popup {
+.navigation .login-popup {
     width: 130px;
     height: 50px;
     border: 2px solid #fff;
@@ -84,35 +84,58 @@ content: "";
     transition: .5s;
 }
 
-.navigation .Login-popup:hover{
+
+
+.navigation .login-popup:hover{
     color: #162938;
     background: #fff;
 }
 
 
 .wrpper{
-position: relative;
+    position: relative;
     width: 400px;
     height: 440px;
     border: 2px solid rgba(255,255,255,.5);
     border-radius: 20px;
     background: transparent;
     backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
-    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease,height .2s ease;
 }
 
+.wrpper.active-popup{
+    transform: scale(1);
+}
+.wrpper.active{
+    height: 520px;
+}
+
+
 .wrpper .form-box-login{
-    /* display: none; */
+    transition: .18s ease;
+    transform: translateX(0);
+}
+.wrpper.active .form-box-login{
+   transition: none;
+   transform: translateX(-400px);
 }
 
 
 .wrpper .form-box-registration{
     position: absolute;
+    transition: none;
     transform: translateX(400px);
+}
+
+.wrpper.active .form-box-registration{
+    transition: .18s ease;
+    transform: translateX(0);
 }
 h2{
     font-size: 2em;
@@ -267,3 +290,5 @@ margin: 23px 0 10px;
     cursor: pointer;
     z-index: 1;
 }
+
+

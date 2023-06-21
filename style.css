@@ -90,7 +90,7 @@ content: "";
 }
 
 
-.warpper{
+.wrpper{
 position: relative;
     width: 400px;
     height: 440px;
@@ -101,10 +101,19 @@ position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* overflow: hidden; */
     box-shadow: 0 0 30px rgba(0,0,0,.5);
 }
 
+.wrpper .form-box-login{
+    /* display: none; */
+}
 
+
+.wrpper .form-box-registration{
+    position: absolute;
+    transform: translateX(400px);
+}
 h2{
     font-size: 2em;
     text-align: center;
@@ -218,8 +227,17 @@ margin: 23px 0 10px;
     text-decoration: underline;
 }
 
+.login-register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
 
-.warpper .icon-close{
+.login-register a:hover{
+    text-decoration: underline;
+}
+
+.wrpper .icon-close{
     position: absolute;
     top: 0;
     right: 0;
@@ -231,6 +249,7 @@ margin: 23px 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     overflow: hidden;
     border-bottom-left-radius: 20px;
     cursor: pointer;

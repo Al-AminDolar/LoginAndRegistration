@@ -181,10 +181,12 @@ input:valid ~ label{
     accent-color: #1347f1;
     margin-right: 3px;
     font-weight: 500;
+    
 }
 
 
 .remember a{
+    
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
@@ -209,7 +211,7 @@ input:valid ~ label{
 
 .register{
   
-text-size:.9em;
+font-size:.9em;
 text-align: center;
 font-weight: 500;
 margin: 23px 0 10px;
@@ -226,6 +228,16 @@ margin: 23px 0 10px;
 .register a:hover{
     text-decoration: underline;
 }
+
+
+.login-register{
+    font-size:.9em;
+    text-align: center;
+    font-weight: 500;
+    margin: 23px 0 10px;
+    
+}
+
 
 .login-register p a{
     text-decoration: none;

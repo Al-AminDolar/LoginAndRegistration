@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("softtech.jpg") no-repeat;
+    background: url("C.jpg") no-repeat;
     background-size:cover;
     background-position: center;
 color: #fff;
@@ -37,7 +37,7 @@ header{
 .logo{
     color: #fff;
     font-size: 2em;
-    font-weight: 500;
+    font-weight: 600;
     user-select: none;
 }
 
@@ -94,12 +94,12 @@ content: "";
 
 .wrpper{
     position: relative;
-    width: 400px;
-    height: 440px;
+    width: 350px;
+    height: 390px;
     border: 2px solid rgba(255,255,255,.5);
     border-radius: 20px;
     background: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0,0,0,.5);
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@ content: "";
     transform: scale(1);
 }
 .wrpper.active{
-    height: 520px;
+    height: 440px;
 }
 
 
@@ -201,7 +201,7 @@ input:valid ~ label{
 }
 
 .remember label input{
-    accent-color: #1347f1;
+    accent-color: #162938;
     margin-right: 3px;
     font-weight: 500;
     
@@ -217,6 +217,7 @@ input:valid ~ label{
 
 .remember a:hover{
     text-decoration: underline;
+    
 }
 
 
@@ -224,6 +225,8 @@ input:valid ~ label{
     width: 100%;
     height: 40px;
     border-radius: 6px;
+    color: #ffff;
+    background-color: #162938;
     outline: none;
     border: none;
     font-size: 1em;
@@ -244,8 +247,12 @@ margin: 23px 0 10px;
 
 .register  p a{
     text-decoration: none;
-    color: #fff;
+    color: #ffff;
     font-weight: 500;
+}
+
+.register p{
+    color: #dddd;
 }
 
 .register a:hover{
@@ -264,8 +271,12 @@ margin: 23px 0 10px;
 
 .login-register p a{
     text-decoration: none;
-    color: #fff;
+    color: #ffff;
     font-weight: 500;
+}
+
+.login-register p{
+    color:#dddd;
 }
 
 .login-register a:hover{
@@ -278,7 +289,7 @@ margin: 23px 0 10px;
     right: 0;
     width: 45px;
     height: 45px;
-    background-color: #fff;
+    background-color: #ffff;
     color: black;
     font-size: 2em;
     display: flex;
